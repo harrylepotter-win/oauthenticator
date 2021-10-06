@@ -30,7 +30,7 @@ from traitlets import Unicode
 
 def guess_callback_uri(protocol, host, hub_server_url):
     return '{proto}://{host}{path}'.format(
-        proto=protocol, host=host, path=url_path_join(hub_server_url, 'oauth_callback')
+        proto='https', host=host, path=url_path_join(hub_server_url, 'oauth_callback')
     )
 
 
